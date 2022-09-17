@@ -1,10 +1,10 @@
 import { React, useState, useEffect } from 'react'
-import Image from 'next/Image'
 import CompanyDetailsModal from '../../CompanyPageModals/CompanyDetailsModal'
 import ResultModal from '../../CompanyPageModals/ResultModal'
 import { ref, remove } from 'firebase/database';
 import { getdatabase } from '../../../../../firebase';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 const CompaniesCards = ({ data, imageUrl, batch }) => {
 
