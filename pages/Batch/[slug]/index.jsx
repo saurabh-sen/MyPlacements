@@ -7,6 +7,8 @@ const Batch = () => {
   const router = useRouter()
   const { slug } = router.query
 
+  console.log("batch/slug "+ router.query)
+
     return (
         <CompaniesPage batch={slug} />
     )

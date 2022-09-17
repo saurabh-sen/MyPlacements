@@ -13,6 +13,9 @@ const Companies = () => {
     const router = useRouter();
     const { company, slug, clg } = router.query
 
+    console.log("batch/slug/company/ "+ router.query)
+
+
     const [loading, setLoading] = useState(true)
     const [results, setResults] = useState({ '0206cs19': 'pass', '0225cs': 'fail' })
     const [applicationDetails, setApplicationDetails] = useState('')

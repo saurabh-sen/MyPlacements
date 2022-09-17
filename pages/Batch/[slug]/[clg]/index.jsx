@@ -8,6 +8,9 @@ const Batch = () => {
   const [loading, setLoading] = useState(true);
   const { slug, clg } = router.query;
 
+  console.log("batch/slug "+ router.query)
+
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
