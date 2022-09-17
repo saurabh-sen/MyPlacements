@@ -3,7 +3,8 @@ import { React, useState, useEffect } from 'react'
 import SearchModal from '../SearchModal/SearchModal';
 import styles from "./Navbar.module.css"
 import { useRouter } from 'next/router'
-import { getAuth, signOut } from "firebase/auth";
+import { signOut } from "firebase/auth";
+import { auth } from "../../firebase";
 
 const Navbar = () => {
 
@@ -34,12 +35,13 @@ const Navbar = () => {
   }, []);
 
   const signOutAdmin = () => {
-    const auth = getAuth();
+    // const auth = getAuth();
     signOut(auth).then(() => {
       // Sign-out successful.
       document.cookie = "userEmail=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       document.cookie = "userUid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       document.cookie = "userInstitute=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      window.location.reload(true)
       router.push('/');
     }).catch((error) => {
       // An error happened.
