@@ -61,7 +61,7 @@ const Companies = () => {
                             {
                                 results ?
                                     <div className="results w-[80%] m-auto mt-8 pb-[3rem] border-b border-[gray] flex justify-center items-center flex-col ">
-                                        <div className="results__container w-[30vw] flex justify-around items-center ">
+                                        <div className="results__container w-[80vw] sm:w-[30vw] flex justify-around items-center ">
                                             <div className="results__container__input">
                                                 <input type="text" name="roll" id="roll" placeholder='Enter Your Roll no.' onChange={(e) => setResultsInput(e.target.value.toLowerCase())}
                                                     style={{
