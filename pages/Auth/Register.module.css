@@ -1,0 +1,214 @@
+.LoginContainer {
+    width: 100%;
+    background: rgb(10 10 10);
+    background-image: radial-gradient(circle at 71% 73%, rgba(179, 110, 67, 0.2) 0%, rgba(179, 110, 67, 0) 90%), radial-gradient( ellipse at 93% 34%,rgba(167, 206, 239, 0.7) 0%,rgba(167, 206, 239, 0) 60%), radial-gradient(      circle at 0% 75%,rgba(142, 159, 175, 0.6) 0%,rgba(142, 159, 175, 0) 40% ),radial-gradient(farthest-side at 15% 61%, rgba(125, 114, 184, 0.6) 0%,rgba(125, 114, 184, 0) 100% );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+}
+
+.box_form {
+    height: max-content;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 75%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 6px #c5c5d685;
+  }
+  @media (max-width: 980px) {
+    .box_form {
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+    }
+  }
+ 
+  .box_form .left {
+    color: #FFFFFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../public/auth.svg");
+    overflow: hidden;
+    /* filter: blur(1px); */
+  }
+  .box_form .left .overlay {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .box_form .left .overlay h1 {
+    font-size: 1px;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .socialMediaLogin {
+    margin-top: 30px;
+    font-weight: 900;
+  }
+  .box_form .left .overlay div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b5998;
+    color: #FFFFFF;
+    margin-top: 10px;
+    padding: 14px 50px;
+    border-radius: 100px;
+  }
+  .box_form .left .overlay div a svg{
+    margin-right: 5px;
+  }
+  .box_form .left .overlay div a:last-child {
+    background: #1dcaff;
+    margin-left: 30px;
+  }
+  .box_form .right {
+    padding: 40px;
+    background-color: #0e1525;
+    color: white;
+  }
+  @media (max-width: 980px) {
+    .box_form .right {
+      width: 100%;
+    }
+  }
+  .box_form .right h5 {
+    font-size: 6vmax;
+    font-weight: 700;
+  }
+  .box_form .right p {
+    font-size: 14px;
+    color: #B0B3B9;
+  }
+
+  .box_form .right p a {
+    font-size: 14px;
+    color: #5f8fef;
+  }
+
+  .box_form .right .inputs {
+    overflow: hidden;
+  }
+  .box_form .right input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #B0B3B9;
+    background-color: #0e1525;
+    color: white;
+  }
+  .box_form .right .remembermeforgetpassword {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box_form .right .remembermeforgetpassword input {
+    margin: 0;
+    margin-right: 7px;
+    width: auto;
+  }
+  .box_form .right .buttonSignUp {
+    float: right;
+    display: inline-block;
+  }
+  
+  .labelForInput {
+    display: block;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  .labelForInput span.text_checkbox {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+
+  .button_container_1 {
+    position: relative;
+      width: 6em;
+    height: 43px;
+    overflow: hidden;
+    border: 1px solid #80808082;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 0 50em;
+  }
+  .button_container_1 button {
+    width: 101%;
+    height: 100%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: whitesmoke;
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border: none;
+    color: black;
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(22) forwards;
+    animation: ani2 0.7s steps(22) forwards;
+  }
+  .button_container_1 button:hover {
+    -webkit-animation: ani 0.7s steps(22) forwards;
+    animation: ani 0.7s steps(22) forwards;
+  }
+  
+  .mas {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 101%;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    position: absolute;
+    font-size: 11px;
+    margin-top: 14px;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  @-webkit-keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
