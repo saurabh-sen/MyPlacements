@@ -48,7 +48,7 @@ const CompaniesCards = ({ data, imageUrl, batch }) => {
             <div className="Companies__container__company w-80 h-auto border border-gray-500 rounded-2xl flex justify-center items-center mt-8 mb-8 flex-col ">
                 <div className="image m-4 ">
                     {/* Image */}
-                    <Image src={ imageUrl[data.company_name] !== undefined ? imageUrl[data.company_name] : "https://dummyimage.com/300x200/8a828a/ffffff.jpg&text=dummyimage" } alt="Some alt text" width={260} height={170} />
+                    <Image src={ imageUrl[data.company_name] !== undefined ? imageUrl[data.company_name] : "https://dummyimage.com/300x200/8a828a/ffffff.jpg&text=LoadingImage..." } alt="Some alt text" width={260} height={170} />
                 </div>
                 <div className="cname m-6 ">
                     <p className="name ">{data.company_name}</p>
