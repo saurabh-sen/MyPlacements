@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react'
-import styles from './Login.module.css'
+import styles from './login.module.css'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Alert from '../../Components/Alert/Alert'
